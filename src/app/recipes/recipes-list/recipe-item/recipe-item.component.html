@@ -1,1 +1,13 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item clearfix rounded"
+   (click)="onSelectRecipe()">
+  <div class="float-left">
+    <h4 class="">{{recipeItem.name}}</h4>
+    <p class="">{{recipeItem.description}}</p>
+  </div>
+  <span class="float-right">
+        <img class="img-fluid rounded" style="max-height: 50px"
+             src="{{recipeItem.imagePath}}"
+             alt="{{recipeItem.name}}">
+      </span>
+</a>
+<br>
